@@ -27,11 +27,12 @@ class ViewPagerAdapter(private val context : Context) : PagerAdapter() {
         layoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val v = layoutInflater!!.inflate(R.layout.viewpager_activity , null)
         val image = v.findViewById<View>(R.id.imageview) as ImageView
-        v.rotation = -90f
+        //Overrode ViewPage with VerticalViewPage so no longer need to rotate
+        //v.rotation = -90f
 
         image.setImageResource(Image[position])
         val vp = container as ViewPager
-        vp.rotation = 90F
+        //vp.rotation = 90F
         vp.addView(v , 0)
 
 

@@ -6,13 +6,13 @@ import android.support.v7.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-    internal lateinit var viewpager : ViewPager
+    lateinit var viewpager : VerticalViewPager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        viewpager = findViewById(R.id.viewpagerlayout)
+        viewpager = findViewById(R.id.verticalviewpager)
 
         val adapter = ViewPagerAdapter(this)
         viewpager.adapter = adapter
