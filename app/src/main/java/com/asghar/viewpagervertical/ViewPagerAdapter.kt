@@ -11,8 +11,7 @@ import android.widget.ImageView
 
 class ViewPagerAdapter(private val context : Context) : PagerAdapter() {
     private var layoutInflater : LayoutInflater? = null
-    val Image = arrayOf(R.drawable.beginnerballerbg , R.drawable.desiredleaguebg , R.drawable.exercisebg)
-
+    val Image = arrayOf(R.drawable.beginnerballerbg , R.drawable.desiredleaguebg , R.drawable.exercisebg, R.drawable.beginnerballerbg , R.drawable.desiredleaguebg , R.drawable.exercisebg)
 
     override fun isViewFromObject(view: View, `object`: Any): Boolean {
         return view ===  `object`
